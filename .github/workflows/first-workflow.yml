@@ -16,13 +16,17 @@ jobs:
         run: echo "Step 1 complete!"
       - shell: bash
         run: echo "Step 2 complete!"
+        
   job2:
-      - name: Cowsays
-      uses: mscoutermarsh/cowsays-action@v1
-      with:
-        # What does the cow say?
-        text: 'Ready for prod–ship it!'
-        # Color of your cow
-        color: red
+      name: Cowsays
+      runs-on: ubuntu-latest
+      steps:
+      - name: Ship it
+        uses: mscoutermarsh/cowsays-action@master
+        with:
+         text: 'Ready for prod–ship it!'
+         color: 'red'
+                 
+  
           
   

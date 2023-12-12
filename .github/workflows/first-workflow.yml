@@ -13,6 +13,6 @@ jobs:
 
     steps:
       - shell: bash
-        run: |
-          echo "Step 1 complete!"
-          echo "Step 2 complete!"
+        run: echo "Step 1 complete!"
+      - shell: bash
+        run: echo "Step 2 complete!"

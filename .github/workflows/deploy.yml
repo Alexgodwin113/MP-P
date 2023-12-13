@@ -4,7 +4,7 @@ on:
       - main
 
 env:
-  targetEnv: dev 
+  targetEnv: test 
   name: Azure Bicep
 
 name: Deploy Bicep 
